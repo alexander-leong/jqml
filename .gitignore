@@ -1,0 +1,24 @@
+# Ignore image files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+
+# Optional: Ignore images in any subfolder
+**/*.jpg
+**/*.jpeg
+**/*.png
+**/*.gif
+**/*.bmp
+**/*.tiff
+**/*.webp
+
+# Julia-specific ignores
+*.jl.cov
+*.jl.*.cov
+*.ji
+*.jl.so
+Manifest.toml
