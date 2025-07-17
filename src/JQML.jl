@@ -5,14 +5,16 @@ include("models/squeezenet_extractor.jl")
 include("classifiers/classifier_10class.jl")
 include("utils/imagenet_mapping.jl")
 include("data/local_loader.jl")
+include("data/mnist_loader.jl")
 
 # === Use the submodules ===
 using .SqueezeNetExtractor
 using .TenClassClassifier
 using .ImageNetMapping
 using .LocalLoader
+using .MNISTLoader
 
 # === Export the submodules (optional, for cleaner usage) ===
-export SqueezeNetExtractor, TenClassClassifier, ImageNetMapping, LocalLoader
+export SqueezeNetExtractor, TenClassClassifier, ImageNetMapping, LocalLoader, MNISTLoader
 
 end
