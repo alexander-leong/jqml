@@ -1,10 +1,8 @@
-using JQML.SqueezeNetExtractor
-using JQML.TenClassClassifier
-using JQML.ImageNetMapping
+using .JQML
 using Images, FileIO, ImageTransformations, Flux
 
 # Load image
-img = load("assets/cat.jpg")
+img = load("./assets/cat.jpg")
 img_resized = imresize(img, (224, 224))
 img_array = Float32.(channelview(img_resized))
 img_hwcn = permutedims(img_array, (2,3,1))
